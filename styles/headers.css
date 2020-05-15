@@ -1,0 +1,31 @@
+*{
+	font-family: Arial;
+}
+
+li{
+	list-style: none;
+}
+
+header{
+	flex: 1 1 auto;
+	flex-flow: row nowrap;
+	display: flex;
+	background-color: rgb(75,150,62);
+}
+
+nav ul{
+	flex: 1 1 auto;
+	flex-flow: row;
+	display: flex;
+}
+
+.contenido{
+	flex: 1 1 auto;
+	flex-flow: row wrap;
+	display: flex;
+}
+
+.ficha{
+	border: 1px solid black;
+	border-radius: 5px;
+}
