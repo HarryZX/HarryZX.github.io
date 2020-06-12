@@ -16,6 +16,7 @@ header{
 	flex-flow: row nowrap;
 	display: flex;
 	background-color: rgb(0,0,0);
+	justify-content: space-between;
 }
 
 .indice a{
@@ -26,7 +27,7 @@ header{
 
 nav ul{
 	flex: 1 1 auto;
-	flex-flow: row nowrap;
+	flex-flow: row wrap;
 	display: flex;
 	align-items: center;
 }
@@ -46,6 +47,21 @@ nav ul li a:hover{
 	font-weight: bold;
 	color: gray;
 	cursor: pointer;
+}
+
+.botonM{
+	flex: 1 1 auto;
+	flex-flow: column;
+	display: flex;
+	align-items: center;
+	margin: 7px 7px 0px 0px;
+	padding: 0px;
+	visibility: hidden;
+}
+
+.botonM img{
+	margin: 0px;
+	padding: 0px;
 }
 
 /* CONTENEDOR */
