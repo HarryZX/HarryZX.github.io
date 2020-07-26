@@ -1,0 +1,195 @@
+@import "generalConf";
+@import "flexbox";
+@import "colors";
+@import "mainVariables";
+
+*{
+	font-family: $fontGeneral;
+}
+
+.enlace{
+	text-decoration: $without;
+}
+
+/* 	==================================
+*
+*	ESTILOS PARA EL MENU
+*
+*	==================================
+*/
+
+.header__black{
+	@include flex_rowsJustify();
+	background-color: $black;
+}
+
+.indice .enlace{
+	padding: $padding-px-10;
+	color: $white;
+	cursor: $hand;
+}
+
+.boton__menu{
+	@include flex_columnCenter();
+	margin: $margin-td-px-7;
+	padding: $padding-empty;
+	visibility: $hidden;
+	display: $without;
+}
+
+.boton__menu img{
+	margin: $margin-empty;
+	padding: $padding-empty;
+}
+
+.menu__header{
+	@include flex_rowsCenter();
+}
+
+.menu__header .item__lista{
+	padding: $padding-px-10;
+	list-style: $without;
+}
+
+.menu__header .enlace{
+	font-weight: $bold;
+	color: $white;
+	cursor: $hand;
+}
+
+.menu__header .enlace:hover{
+	transition: $two;
+	font-weight: $bold;
+	color: $gray;
+	cursor: $hand;
+}
+
+/* 	==================================
+*
+*	ESTILOS PARA EL CONTENIDO
+*
+*	==================================
+*/
+
+.contenido__principal{
+	@include flex_columnWrap();
+}
+
+.ficha{
+	@include flex_rowWrap();
+}
+
+.enlace__ficha{
+	padding: $padding-px-5;
+	margin: $margin-px-5;
+	border: $border-black;
+	border-radius: $rounded-edges;
+	transition: $two;
+}
+
+.enlace__ficha .enlace{
+	color: $black;
+}
+
+.enlace__ficha:hover{
+	transition: $two;
+	border: $border-white;
+}
+
+.populares{
+	@include flex_columnCenterNo();
+	width: $t-width;
+}
+
+.titulo{
+	font-size: $font-25;
+	border-bottom: $border-black;
+}
+
+.temas{
+	@include flex_rowWrap();
+	padding: $padding-px-5;
+}
+
+.tema__enlace{
+	padding: $padding-px-10;
+	margin: $margin-px-5;
+	border: $border-black;
+	width: $thirth-width;
+}
+
+.tema__enlace:hover{
+	transition: $one;
+	cursor: $hand;
+	background-color: $black;
+	color: $white;
+}
+
+.titulo__tema{
+	text-align: $in-midle;
+}
+
+.contenido__tema{
+	text-align: $just;
+}
+
+/* 	==================================
+*
+*	ESTILOS PARA EL PIE DE PÁGINA
+*
+*	==================================
+*/
+
+.pie__pagina{
+	@include flex_rowWrap();
+	background-color: $black;
+	width: $t-width;
+}
+
+.informacion__pagina{
+	@include flex_columnNo();
+	margin: $margin-px-5;
+	padding: $padding-px-5;
+}
+
+.titulo__info{
+	font-size: $font-17;
+	color: $white;
+	text-align: $in-left;
+	border-bottom: $border-white;
+	width: $little-width;
+}
+
+.enlace__info .enlace{
+	font-size: $font-15;
+	color: $white;
+}
+
+.enlace__info .enlace:hover{
+	transition: $two;
+	color: $gray;
+}
+
+.redes__sociales{
+	@include flex_columnNo();
+	margin: $margin-px-5;
+	padding: $padding-px-5;
+}
+
+.titulo__redes{
+	font-size: $font-17;
+	color: $white;
+	text-align: $in-left;
+	border-bottom: $border-white;
+	width: $font-28;
+}
+
+.enlace__redes .enlace{
+	font-size: $font-15;
+	color: $white;
+}
+
+.enlace__redes .enlace:hover{
+	transition: $two;
+	color: $gray;
+}

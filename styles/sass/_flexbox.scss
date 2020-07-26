@@ -1,0 +1,56 @@
+$flex: 1 1 auto;
+$row: row;
+$col: column;
+$row-No-wrp: row nowrap;
+$col-No-wrp: column nowrap;
+$row-Wrp: row wrap;
+$col-Wrp: column wrap;
+$display: flex;
+$center: center;
+$between: space-between;
+
+@mixin flex_rowsJustify() {
+	flex: $flex;
+	flex-flow: $row-No-wrp;
+	display: $display;
+	justify-content: $between;
+}
+
+@mixin flex_rowsCenter() {
+	flex: $flex;
+	flex-flow: $row-Wrp;
+	display: $display;
+	align-items: center;
+}
+
+@mixin flex_rowWrap() {
+	flex: $flex;
+	flex-flow: $row-Wrp;
+	display: $display;
+}
+
+@mixin flex_columnCenter() {
+	flex: $flex;
+	flex-flow: $col;
+	display: $display;
+	align-items: $center;
+}
+
+@mixin flex_columnCenterNo() {
+	flex: $flex;
+	flex-flow: $col-No-wrp;
+	display: $display;
+	align-items: $center;
+}
+
+@mixin flex_columnNo() {
+	flex: $flex;
+	flex-flow: $col-No-wrp;
+	display: $display;
+}
+
+@mixin flex_columnWrap() {
+	flex: $flex;
+	flex-flow: $col-Wrp;
+	display: $display;
+}

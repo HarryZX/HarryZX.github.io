@@ -1,21 +1,20 @@
 /* Al cargar la página se ocultará o mostrará el menú y el botón */
-$(window).on("load",
-	function hideMenu(){
-		if($(window).width() < 700){
-			$("#menuHeader").hide();
-		}else if($(window).width() > 700){
-			$("#menuHeader").show();
-		}
+$(document).on("load", function hideMenu(){
+	if($(window).width() < 400){
+		$("#menuHeader").hide();
+	}else if($(window).width() > 650){
+		$("#menuHeader").show();
 	}
-);
+});
+
 
 /* Al momento de redimencionar la pantalla se mostrará u ocultará el menú y el botón */
 $(window).on("resize",
 	function redimencionar(){
-		if($(window).width() <= 700){
+		if($(window).width() <= 650){
 			$("#menuHeader").hide("blind");
 			$("#botonM").show().css("visibility","visible");
-		}else if($(window).width() > 700){
+		}else if($(window).width() > 650){
 			$("#menuHeader").show("blind");
 			$("#botonM").hide().css("visibility","hidden");
 		}
